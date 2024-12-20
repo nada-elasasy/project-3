@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+         .list-group li{
+            background: #1111;
+            text-transform: capitalize;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
+            color: #00503e;
+            position: relative;
+        }
+        .list-group li::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background-color: #00503e;
+            display: none;
+        }
+        .list-group li::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 100%;
+            background-color: #f93200;
+            display: none;
+        }
+        .list-group li:hover:before,
+        .list-group li:hover::after{
+            display: block;
+        }
+        .list-group li:hover{
+            background-color: #d9b9b965;
+        }
+        img{
+            height: 200px;
+        } 
+        img{
+            height: 270px;
+        }
+        .list-group li{
+            background: #1111;
+            text-transform: capitalize;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
+            color: #00503e;
+            position: relative;
+            text-align: center;
+            transition: .5s;
+        }
+        .list-group li::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background-color: #000000;
+            display: none;
+
+        }
+        .list-group li::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 100%;
+            background-color: #f93200;
+            display: none;
+        }
+        .list-group li:hover:before,
+        .list-group li:hover::after{
+            display: block;
+        }
+        .list-group li:hover{
+            background-color: #198754;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-success" href="#" style="font-weight: 700;font-size: 22px;">El~BaDaWeY</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              MORE
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Phones</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Air Pods</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- cards -->
+  <h2 class=" my-4 text-center" style="color: #198754; text-transform: uppercase; ">Add to cart <i class="fa-solid fa-cart-shopping fa-bounce"></i></h2>
+  <div class="row d-flex justify-content-around">
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/image1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="card-title">iphone</div>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/image4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" id="card">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/image5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/image6.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/image7.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/images.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/Chip-Apple-A16-Bionic-3.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/image-8.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/image1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/image4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/image5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/image6.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/image7.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/images.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/Chip-Apple-A16-Bionic-3.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12 my-4 " style="width: 20rem;">
+      <img src="img/image-8.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Choose your smartphone from here.</p>
+        <a class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="content">
+
+  </div>
+
+
+    <!-- <div class="mt-3 text-center">
+    <h2 class=" mb-3" style="color: #b18c8c; text-transform: uppercase;">Add to cart <i class="fa-solid fa-cart-shopping fa-bounce"></i></h2>
+    <ul class="list-group">
+        <li class="list-group-item  mb-2" price="1400$">iphone 16 pro max</li>
+        <li class="list-group-item  mb-2" price="1200$">samsung s 24 ultra </li>
+        <li class="list-group-item  mb-2" price="1100$">huawei mate x</li>
+        <li class="list-group-item  mb-2" price="1000$">iphone 14 pro max</li>
+        <li class="list-group-item  mb-2" price="1150$">google pixel 9 pro</li>
+        <li class="list-group-item  mb-2" price="1100$">one plus 12 pro</li>
+        <li class="list-group-item  mb-2" price="1200$">honor magic 6</li>
+        <li class="list-group-item  mb-2" price="950$">oppo reno 12 pro</li>
+    </ul>
+    </div> -->
+<!-- //////////////////////////////////////////////////// -->
+
+
+
+
+
+<!-- price="1400$ -->
+  <ul class="list-group">
+    <li class="list-group-item m-5" id="btn1" style="display: none;">send</li>
+  </ul>
+    <!-- /* <button id="btn1" style="display: none;"></button> */ -->
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
